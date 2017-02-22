@@ -248,7 +248,7 @@ public class NewJFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-    password += "";
+    password = "";
     PIN.setText("");        // TODO add your handling code here:
     }//GEN-LAST:event_jButton12ActionPerformed
 

@@ -30,11 +30,11 @@ public class bank extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -48,11 +48,6 @@ public class bank extends javax.swing.JFrame {
         jLabel2.setText("ANJUNGAN TUNAI MANDIRI");
         getContentPane().add(jLabel2);
         jLabel2.setBounds(80, 50, 270, 50);
-
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel3.setText("BNI SYARIAH-BOJONEGORO");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(80, 100, 260, 30);
 
         jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel4.setText("Masukkan 4 digit pin Anda");
@@ -79,6 +74,11 @@ public class bank extends javax.swing.JFrame {
         });
         jPanel1.add(jButton2);
         jButton2.setBounds(160, 269, 81, 31);
+
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel3.setText("BNI SYARIAH-LUMAJANG");
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(100, 100, 260, 30);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 430, 320);

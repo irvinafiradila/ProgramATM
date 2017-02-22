@@ -33,7 +33,6 @@ public class Transaksi extends javax.swing.JFrame {
         transfer = new javax.swing.JButton();
         setor = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         inputpenarikan = new javax.swing.JTextField();
         inputtransfer = new javax.swing.JTextField();
         inputsetor = new javax.swing.JTextField();
@@ -41,6 +40,7 @@ public class Transaksi extends javax.swing.JFrame {
         nilai = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -86,11 +86,6 @@ public class Transaksi extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(70, 0, 270, 50);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel3.setText("BNI SYARIAH-BOJONEGORO");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(70, 50, 260, 30);
-
         inputpenarikan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 inputpenarikanActionPerformed(evt);
@@ -124,15 +119,24 @@ public class Transaksi extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 153, 153));
 
+        jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel3.setText("BNI SYARIAH-LUMAJANG");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(85, Short.MAX_VALUE)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(55, 55, 55))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 470, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(394, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel1);
